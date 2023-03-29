@@ -50,15 +50,15 @@ const Projects = () => {
         <div
             name="Projects"
             className="bg-gradient-to-b from-black to-gray-800 w-full
-         text-white md:h-screen">
+         text-white pt-20 md:h-full">
             <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-                <div className="pb-8">
+                <div className="pb-4">
                     <p className="text-4xl font-bold inline border-b-4 border-gray-500">
                         Projects
                     </p>
                     <p className="py-6">Check out some of my work!</p>
                 </div>
-                <div className="grid  sm:grid-cols-2 md:grid-cols-3 gap-8 py-12 sm:py-0">
+                <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 py-10 ">
                     {projects.map(({ id, src, liveDemo, codeLink }) => (
                         <div
                             key={id}
