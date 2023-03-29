@@ -1,5 +1,5 @@
 import React from 'react';
-import GPT3 from '../assets/portfolio/GPT3.jpg';
+import GPT3 from '../assets/portfolio/GPT3.png';
 import installNode from '../assets/portfolio/installNode.jpg';
 import navbar from '../assets/portfolio/navbar.jpg';
 import reactParallax from '../assets/portfolio/reactParallax.jpg';
@@ -63,7 +63,7 @@ const Projects = () => {
                         <div
                             key={id}
                             className="shadow-md shadow-gray-600 rounded-lg duration-200 hover:scale-105">
-                            <img src={src} alt="preview" />
+                            <img src={src} alt="preview" className="h-3/5" />
                             <div className="flex items-center justify-center">
                                 <button className="w-1/2 px-6 py-3 m-4 duration200 hover:scale-105">
                                     <a
