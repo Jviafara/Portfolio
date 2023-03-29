@@ -1,5 +1,5 @@
 import React from 'react';
-import arrayDestruct from '../assets/portfolio/arrayDestruct.jpg';
+import GPT3 from '../assets/portfolio/GPT3.jpg';
 import installNode from '../assets/portfolio/installNode.jpg';
 import navbar from '../assets/portfolio/navbar.jpg';
 import reactParallax from '../assets/portfolio/reactParallax.jpg';
@@ -10,9 +10,9 @@ const Projects = () => {
     const projects = [
         {
             id: 1,
-            src: arrayDestruct,
-            liveDemo: 'https://www.youtube.com/',
-            codeLink: 'https://github.com/',
+            src: GPT3,
+            liveDemo: 'https://gpt-3aidemo.netlify.app',
+            codeLink: 'https://github.com/Jviafara/GPT-3',
         },
         {
             id: 2,
