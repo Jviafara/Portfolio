@@ -12,23 +12,24 @@ const About = () => {
                     </p>
                 </div>
                 <p className="text-xl mt-20">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Officiis distinctio ducimus, doloribus dolorum architecto
-                    illo non aliquid minus quae nemo cumque iure ea! Repellat
-                    expedita neque tempore quia, odit, qui eligendi alias libero
-                    quis soluta quasi iste, fugiat explicabo id nesciunt
-                    consequuntur molestiae nulla? Tempora at facilis nemo
-                    reprehenderit libero?
+                    Durante toda mi formación de pregrado en ingeniería
+                    electrónica siempre tuve una mejor afinidad hacia la
+                    programación que con los demás conocimientos, durante toda
+                    mi formación aprendí y utilicé una programación practica
+                    utilizando lenguajes basados en c++ en plataformas como
+                    arduino o PIC, pero luego de descubrir la programación
+                    orientada a objetos y el desarrollo de software decidí que
+                    eran conocimientos y skills que debería adquirir y poco
+                    apoco fui adquiriendo estos conocimientos.
                 </p>
                 <br />
                 <p className="text-xl">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Tenetur eum, accusantium ipsa repudiandae iure perferendis
-                    fugiat totam repellendus id magnam debitis unde eius quae
-                    doloribus distinctio cumque consequatur minus quos quas
-                    atque excepturi animi odio, voluptatem ad. Et quod culpa
-                    architecto. Error, nostrum eum voluptatem ducimus repellat
-                    qui nam cum.
+                    Hoy puedo decir que soy un desarrollador web y estoy en
+                    busca de una oportunidad de demostrar las habilidades que
+                    adquirido y que sean de uso y ayuda en un ámbito
+                    profesional, de la misma manera espero seguir adquiriendo
+                    conocimientos y experiencias para crecer aún más como
+                    desarrollador.
                 </p>
             </div>
         </div>
