@@ -4,6 +4,7 @@ import GitHub from '../assets/github.png';
 import Html from '../assets/html.png';
 import JavaScript from '../assets/javascript.png';
 import MongoDB from '../assets/mongodb.png';
+import MySQL from '../assets/mysql.png';
 import Node from '../assets/node.png';
 import ReactLogo from '../assets/react.png';
 import Tailwind from '../assets/tailwind.png';
@@ -22,6 +23,12 @@ const Skills = () => {
             src: MongoDB,
             title: 'MongoDb',
             style: 'shadow-green-800',
+        },
+        {
+            id: 3,
+            src: MySQL,
+            title: 'MySQL',
+            style: 'shadow-blue-800',
         },
     ];
     const tools = [
