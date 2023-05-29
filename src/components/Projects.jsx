@@ -95,8 +95,8 @@ const Projects = () => {
                                 X
                             </button>
                         </div>
-                        <div className="flex gap-8">
-                            <div className="w-2/3 ">
+                        <div className="flex gap-8 flex-col lg:flex-row">
+                            <div className="w-full lg:w-2/3 ">
                                 <img
                                     src={project[0].src}
                                     alt="preview"
@@ -108,7 +108,7 @@ const Projects = () => {
                                     </strong>
                                 )}
                             </div>
-                            <div className="w-1/3 flex flex-col">
+                            <div className="w-full lg:w-1/3 flex flex-col">
                                 <div className="text-lg my-2">
                                     <p>{project[0].description}</p>
                                 </div>
