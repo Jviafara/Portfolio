@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import { Button } from 'react-scroll';
+import React, { useState } from 'react';
 import DeltaAI from '../assets/portfolio/Delta-AI.png';
 import GPT3 from '../assets/portfolio/GPT3.png';
 import patontas from '../assets/portfolio/Patontas.png';
@@ -133,7 +132,9 @@ const Projects = () => {
                                 </div>
                                 <div className="flex items-center justify-evenly gap-2 p-4">
                                     {project[0].techs.map((tech) => (
-                                        <div className="group flex items-center">
+                                        <div
+                                            key={tech}
+                                            className="group flex items-center">
                                             <div className="group-hover:hidden">
                                                 <TechUse tech={tech} />
                                             </div>
