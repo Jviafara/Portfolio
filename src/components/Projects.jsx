@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { AiOutlineCloseCircle } from 'react-icons/ai';
 import DeltaAI from '../assets/portfolio/Delta-AI.png';
 import GPT3 from '../assets/portfolio/GPT3.png';
+import movienest from '../assets/portfolio/MovieNest.png';
 import patontas from '../assets/portfolio/Patontas.png';
 import TechUse from './TechUse';
 
@@ -16,7 +18,7 @@ const Projects = () => {
             src: GPT3,
             name: 'GPT-3',
             description:
-                'Fully responsive web application design usin react and tailwind',
+                'Web app completamente responsive usando react y tailwind',
             liveDemo: 'https://gpt-3aidemo.netlify.app',
             codeLink: 'https://github.com/Jviafara/GPT-3',
             techs: ['react', 'tailwind'],
@@ -30,18 +32,16 @@ const Projects = () => {
                 'Aplicación fullstack usando openAI API para generar imágenes a partir de una frase cualquiera y con la opción de compartir dichas imágenes con todos los usuarios y guardar las imágenes en la nube.',
             liveDemo: 'https://delta-ai.netlify.app/',
             codeLink: 'https://github.com/Jviafara/Delta-AI',
-            techs: ['nodejs', 'mongo', 'express', 'react', 'tailwind'],
+            techs: ['nodejs', 'mongodb', 'express', 'react', 'tailwind'],
         },
         {
             id: 3,
-            src: patontas,
-            name: 'Patontas',
-            description:
-                'E-commerce web page fullstack para una pequeñá tienda de artesanias hechas a mano',
-            note: note,
-            liveDemo: 'https://patontas.netlify.app/products',
-            codeLink: '',
-            techs: ['nodejs', 'mongo', 'express', 'react', 'tailwind'],
+            src: movienest,
+            name: 'MovieNest',
+            description: '',
+            liveDemo: 'https://movienestapp.netlify.app/',
+            codeLink: 'https://github.com/Jviafara/MovieNest',
+            techs: ['nodejs', 'mongodb', 'express', 'react', 'material ui'],
         },
     ];
 
@@ -63,57 +63,50 @@ const Projects = () => {
                     {projects.map(({ id, src, name }) => (
                         <div
                             key={id}
-                            className="shadow-md shadow-gray-600 rounded-lg duration-200 hover:scale-105">
-                            <div className="bg-gray-400 rounded-t-lg flex justify-center font-bold text-lg">
+                            style={{
+                                backgroundImage: `url(${src})`,
+                            }}
+                            onClick={() => {
+                                setProjectInfo(true);
+                                setProject(projects.filter((e) => e.id === id));
+                            }}
+                            className="w-full h-48 flex flex-col group relative bg-cover bg-center shadow-md shadow-gray-600 rounded-lg duration-200 hover:scale-105 hover:opacity-90">
+                            <div className="text-center font-bold text-lg text-white bg-gray-700 bg-opacity-50 rounded-t-lg">
                                 <h1>{name}</h1>
                             </div>
-                            <button
-                                type="button"
-                                onClick={() => {
-                                    setProjectInfo(true);
-                                    setProject(
-                                        projects.filter((e) => e.id === id)
-                                    );
-                                }}>
-                                <img
-                                    src={src}
-                                    alt="preview"
-                                    className="rounded-b-lg -mb-1.5 h-full w-full"
-                                />
-                            </button>
+                            <div className="justify-center hidden group-hover:flex absolute top-1/2 w-full">
+                                <p className="bg-opacity-90 rounded-xl font-bold text-lg text-white bg-gray-700 px-3 py-1 hover:cursor-pointer">
+                                    Click for more info
+                                </p>
+                            </div>
                         </div>
                     ))}
                 </div>
                 {projectInfo && (
                     <div>
-                        <div className="bg-gray-400 rounded-t-lg flex justify-between items-center font-bold text-lg p-2">
-                            <h1 className="ml-2">{project[0].name}</h1>
-                            <button
-                                type="button"
-                                onClick={() => setProjectInfo(false)}
-                                className="bg-red-500 px-3 py-1 rounded-full">
-                                X
-                            </button>
-                        </div>
-                        <div className="flex gap-8 flex-col lg:flex-row">
-                            <div className="w-full lg:w-2/3 ">
-                                <img
-                                    src={project[0].src}
-                                    alt="preview"
-                                    className=""
-                                />
-                                {project[0].note && (
-                                    <strong className="text-sm">
-                                        Note: {project[0].note}
-                                    </strong>
-                                )}
-                            </div>
-                            <div className="w-full lg:w-1/3 flex flex-col">
-                                <div className="text-lg my-2">
+                        <div className="flex flex-col lg:flex-row">
+                            <div
+                                style={{
+                                    backgroundImage: `url(${project[0].src})`,
+                                }}
+                                className="w-full h-full pt-[33.33%] lg:w-2/3 rounded-lg bg-top-center bg-no-repeat bg-cover"></div>
+                            <div className="w-full lg:w-1/3 flex flex-col pl-4">
+                                <div className="rounded-t-lg flex  items-center justify-between font-bold text-lg">
+                                    <h1>{project[0].name}</h1>
+                                    <button
+                                        type="button"
+                                        onClick={() => setProjectInfo(false)}>
+                                        <AiOutlineCloseCircle
+                                            size={24}
+                                            color="red"
+                                        />
+                                    </button>
+                                </div>
+                                <div className="my-2">
                                     <p>{project[0].description}</p>
                                 </div>
                                 <div className="flex items-center justify-center">
-                                    <button className="w-1/2 px-6 py-3 m-4 shadow-md shadow-gray-600 rounded-lg duration-300 hover:scale-110">
+                                    <button className="w-1/2 px-4 py-3 m-4 shadow-md shadow-gray-600 rounded-lg duration-300 hover:scale-110">
                                         <a
                                             href={project[0].liveDemo}
                                             target="_blank"
@@ -143,6 +136,13 @@ const Projects = () => {
                                             </p>
                                         </div>
                                     ))}
+                                </div>
+                                <div>
+                                    {project[0].note && (
+                                        <strong className="text-sm">
+                                            Note: {project[0].note}
+                                        </strong>
+                                    )}
                                 </div>
                             </div>
                         </div>

@@ -15,14 +15,6 @@ const Home = () => {
                         <br />
                         I'm a Full Stack Web Developer.
                     </h2>
-                    <p className="text-gray-500 py-6 max-w-full  text-center  md:text-left">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Donec volutpat egestas elit vel aliquam. Nulla venenatis
-                        massa nibh, sed pretium nisi cursus ac. Fusce nec
-                        facilisis urna, euismod semper nisi. Vivamus imperdiet
-                        eleifend lectus sed placerat. Integer non pharetra
-                        tortor. Nam eget libero turpis.
-                    </p>
                     <div>
                         <Link
                             to="Projects"
