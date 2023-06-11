@@ -3,7 +3,7 @@ import { AiOutlineCloseCircle } from 'react-icons/ai';
 import DeltaAI from '../assets/portfolio/Delta-AI.png';
 import GPT3 from '../assets/portfolio/GPT3.png';
 import movienest from '../assets/portfolio/MovieNest.png';
-import patontas from '../assets/portfolio/Patontas.png';
+import RubickStore from '../assets/portfolio/RubikStore.png';
 import TechUse from './TechUse';
 
 const Projects = () => {
@@ -29,7 +29,7 @@ const Projects = () => {
             name: 'DeltaAI',
             note: note,
             description:
-                'Aplicación fullstack usando openAI API para generar imágenes a partir de una frase cualquiera y con la opción de compartir dichas imágenes con todos los usuarios y guardar las imágenes en la nube.',
+                'Aplicación FullStack usando openAI API para generar imágenes a partir de una frase cualquiera y con la opción de compartir dichas imágenes con todos los usuarios y guardar las imágenes en la nube.',
             liveDemo: 'https://delta-ai.netlify.app/',
             codeLink: 'https://github.com/Jviafara/Delta-AI',
             techs: ['nodejs', 'mongodb', 'express', 'react', 'tailwind'],
@@ -38,10 +38,21 @@ const Projects = () => {
             id: 3,
             src: movienest,
             name: 'MovieNest',
-            description: '',
+            description:
+                'Galeria web FullStack de peliculas y series de todo el mundo usado react y materialUI, nodejs e implementando el uso de un dataset como API llamado TMDB (The Movie DataBase)',
             liveDemo: 'https://movienestapp.netlify.app/',
             codeLink: 'https://github.com/Jviafara/MovieNest',
             techs: ['nodejs', 'mongodb', 'express', 'react', 'material ui'],
+        },
+        {
+            id: 4,
+            src: RubickStore,
+            name: "Rubik's Store",
+            description:
+                'Aplicacion web FullStack E-commerce usando nodejs, mongoDB y react/redux, implementando la API de manejo ded pagos Stripe',
+            liveDemo: 'https://rubikstore.netlify.app/',
+            codeLink: 'https://github.com/Jviafara/RubicksStore',
+            techs: ['nodejs', 'mongodb', 'express', 'react', 'tailwind'],
         },
     ];
 
