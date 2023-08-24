@@ -44,7 +44,7 @@ const SocialLinks = () => {
                     Resume <BsFillPersonLinesFill size={30} />
                 </>
             ),
-            href: '/Jesús_Viafara_CV.pdf',
+            href: '/Jesús_Viafara.pdf',
             style: 'rounded-br-md',
             download: true,
         },
