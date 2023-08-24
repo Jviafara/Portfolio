@@ -34,16 +34,16 @@ const Projects = () => {
             codeLink: 'https://github.com/Jviafara/Delta-AI',
             techs: ['nodejs', 'mongodb', 'express', 'react', 'tailwind'],
         },
-        {
-            id: 3,
-            src: movienest,
-            name: 'MovieNest',
-            description:
-                'Galeria web FullStack de peliculas y series de todo el mundo usado react y materialUI, nodejs e implementando el uso de un dataset como API llamado TMDB (The Movie DataBase)',
-            liveDemo: 'https://movienestapp.netlify.app/',
-            codeLink: 'https://github.com/Jviafara/MovieNest',
-            techs: ['nodejs', 'mongodb', 'express', 'react', 'material ui'],
-        },
+        // {
+        //     id: 3,
+        //     src: movienest,
+        //     name: 'MovieNest',
+        //     description:
+        //         'Galeria web FullStack de peliculas y series de todo el mundo usado react y materialUI, nodejs e implementando el uso de un dataset como API llamado TMDB (The Movie DataBase)',
+        //     liveDemo: 'https://movienestapp.netlify.app/',
+        //     codeLink: 'https://github.com/Jviafara/MovieNest',
+        //     techs: ['nodejs', 'mongodb', 'express', 'react', 'material ui'],
+        // },
         {
             id: 4,
             src: RubickStore,

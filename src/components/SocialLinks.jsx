@@ -13,7 +13,7 @@ const SocialLinks = () => {
                     LinkedIn <FaLinkedin size={30} />
                 </>
             ),
-            href: 'https://www.linkedin.com/in/jes%C3%BAs-alberto-viafar-torres-8019b8245/',
+            href: 'https://www.linkedin.com/in/jes%C3%BAs-viafara-8019b8245/',
             style: 'rounded-tr-md',
         },
         {
